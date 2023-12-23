@@ -191,5 +191,16 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.6.vendor:64 \
     android.system.net.netd@1.1.vendor:64
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/default-permissions/default_permissions_co.aospa.sense.xml \
+    system/etc/permissions/android.hardware.biometrics.face.xml \
+    system/etc/permissions/privapp_whitelist_co.aospa.sense.xml \
+    system/etc/sysconfig/hiddenapi-whitelist-co.aospa.sense.xml \
+    system/lib64/libFaceDetectCA.so \
+    system/lib64/libMegviiUnlock-jni-1.2.so \
+    system/lib64/libMegviiUnlock.so \
+    system/lib64/libmegface.so \
+    system/priv-app/FaceUnlock/FaceUnlock.apk
+
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
