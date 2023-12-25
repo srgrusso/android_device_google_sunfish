@@ -4,13 +4,20 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Bliss stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/sunfish/aosp_sunfish.mk)
 
 include device/google/sunfish/device-lineage.mk
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps
+TARGET_ESSENTIAL_GAPPS := true
+TARGET_STOCK_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
