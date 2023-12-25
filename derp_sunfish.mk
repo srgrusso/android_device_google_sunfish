@@ -5,17 +5,25 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/sunfish/aosp_sunfish.mk)
 
 include device/google/sunfish/device-lineage.mk
 
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+
+# Enable quick tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4a
-PRODUCT_NAME := lineage_sunfish
+PRODUCT_NAME := derp_sunfish
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
