@@ -98,9 +98,6 @@ system_ext/framework/com.google.android.camera.extensions.jar
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# NFC
-system_ext/priv-app/PixelNfc/PixelNfc.apk
-
 # Permissions
 system_ext/etc/permissions/privapp-permissions-google-se.xml:system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml
 
